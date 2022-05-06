@@ -32,11 +32,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.vertical-line-left p {
+.vertical-line-left p:nth-of-type(1) {
   background: black;
   width: 50%;
   height: 160px;
   border-right: 0.4px solid rgb(234, 226, 226);
+}
+.vertical-line-left p:nth-of-type(2) {
+  background: black;
+  width: 50%;
+  height: 160px;
 }
 
 header {
@@ -102,6 +107,32 @@ header a {
 .intro h2 {
   font-size: 5rem;
   margin-left: 7%;
+}
+
+/* =================================== */
+/* ----------article-facts-------------*/
+/* =================================== */
+.facts {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.facts .figures {
+  margin-top: 25vh;
+  margin-left: 7%;
+  color: white;
+}
+.facts .figures p {
+  line-height: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+  margin: 2vh 0;
+}
+.facts .figures h2 {
+  font-size: 5rem;
+}
+.facts img {
+  width: 50%;
+  margin-bottom: 10vh;
 }
 
 /* =================================== */
@@ -280,7 +311,6 @@ header a {
   max-width: 1440px;
   list-style: none;
   background: black;
-  margin-bottom: 20vh;
 }
 .bear-images img:first-child {
   display: block;
@@ -301,6 +331,22 @@ header a {
   grid-column: 7 span;
   grid-row: 2 span;
   background: white;
+}
+
+.circle {
+  width: 22%;
+  position: relative;
+  left: 73%;
+  bottom: 208px;
+  animation: circle 60s infinite;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .poppy-images {
