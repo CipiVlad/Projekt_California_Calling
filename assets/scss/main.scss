@@ -1,0 +1,85 @@
+@import "_generals.scss";
+@import "_mixin.scss";
+@import "_variables.scss";
+
+@font-face {
+    font-family: 'LarishA';
+    src: url('../fonts/Larish\ Neue\ Semibold.woff2');
+}
+
+@font-face {
+    font-family: 'LarishB';
+    src: url('../fonts/LarishNeueSemibold.woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap');
+
+
+
+/* =================================== */
+/* ------💀--- h•e•a•d•e•r -💀 ---------*/
+/* =================================== */
+
+
+/* =================================== */
+/* ------🧭-- n•a•v-b•a•r --🧭---------*/
+/* =================================== */
+
+/* =================================== */
+/*---------  m•a•i•n  ----------------*/
+/* =================================== */
+
+// ----section -- Stuck in the middle
+
+.white-middle {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 5fr 1fr 3fr 1fr;
+    max-width: 1440px;
+    list-style: none;
+
+    h2 {
+        font-family: $font-A;
+        font-size: 4rem;
+    }
+
+    p {
+        font-family: $font-C;
+    }
+
+
+    li:nth-child(1) {
+        grid-column: 5/span 2;
+        grid-row: 4/span 2;
+    }
+
+    li:nth-child(3) {
+        grid-column: 2/span 1;
+        grid-row: 6;
+        margin-top: 10vh;
+    }
+
+    li:nth-child(4) {
+        grid-column: 4/span 1;
+        grid-row: 7 / span 2;
+    }
+
+    li:nth-child(5) {
+        grid-column: 6/span 2;
+        grid-row: 9/span 2;
+    }
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+/* =================================== */
+/* --------👣 - f•o•o•t•e•r -----------*/
+/* =================================== */
+
+/* =================================== */
+/* --🖥- m•e•d•i•a-q•u•e•r•i•e•s -📲--- */
+/* =================================== */
+@media screen and (min-width: 768px) {}

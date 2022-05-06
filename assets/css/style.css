@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* =================================== */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* =================================== */
+@font-face {
+  font-family: "LarishA";
+  src: url("../fonts/Larish Neue Semibold.woff2");
+}
+@font-face {
+  font-family: "LarishB";
+  src: url("../fonts/LarishNeueSemibold.woff");
+}
+/* =================================== */
+/* ------💀--- h•e•a•d•e•r -💀 ---------*/
+/* =================================== */
+/* =================================== */
+/* ------🧭-- n•a•v-b•a•r --🧭---------*/
+/* =================================== */
+/* =================================== */
+/*---------  m•a•i•n  ----------------*/
+/* =================================== */
+.white-middle {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 5fr 1fr 3fr 1fr;
+  max-width: 1440px;
+  list-style: none;
+}
+.white-middle h2 {
+  font-family: "LarishA";
+  font-size: 4rem;
+}
+.white-middle p {
+  font-family: "Work Sans", sans-serif;
+}
+.white-middle li:nth-child(1) {
+  grid-column: 5/span 2;
+  grid-row: 4/span 2;
+}
+.white-middle li:nth-child(3) {
+  grid-column: 2/span 1;
+  grid-row: 6;
+  margin-top: 10vh;
+}
+.white-middle li:nth-child(4) {
+  grid-column: 4/span 1;
+  grid-row: 7/span 2;
+}
+.white-middle li:nth-child(5) {
+  grid-column: 6/span 2;
+  grid-row: 9/span 2;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* =================================== */
+/* --------👣 - f•o•o•t•e•r -----------*/
+/* =================================== */
+/* =================================== */
+/* --🖥- m•e•d•i•a-q•u•e•r•i•e•s -📲--- */
+/* =================================== */
+
+/*# sourceMappingURL=style.css.map */
