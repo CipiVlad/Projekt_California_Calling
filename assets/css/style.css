@@ -379,8 +379,67 @@ header a {
 /* --------👣 - f•o•o•t•e•r -----------*/
 /* =================================== */
 footer {
+  padding-top: 15vh;
   background-color: black;
   color: white;
+}
+footer div > p {
+  font-family: "Work Sans", sans-serif;
+  margin-left: 7%;
+}
+footer section {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 4%;
+}
+footer article:nth-of-type(2) {
+  margin-left: 7%;
+}
+footer article img {
+  width: 2%;
+}
+footer div img {
+  width: 20%;
+  margin-left: 7%;
+}
+footer nav {
+  margin: 6vh 0 20vh 0;
+}
+footer nav a {
+  text-decoration: none;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  border: 1px solid white;
+  padding: 20px 40px;
+  margin-left: 7%;
+}
+footer nav a:hover {
+  color: black;
+  background-color: rgb(234, 226, 226);
+  border-color: rgb(234, 226, 226);
+}
+footer section {
+  padding-bottom: 10vh;
+}
+footer section div:first-child {
+  width: 50%;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+}
+.footer-text p:first-child {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  margin-left: 7%;
+  margin-bottom: 10vh;
+}
+.footer-text p {
+  font-family: "LarishA";
+  line-height: 1.8;
+  margin-left: 7%;
 }
 
 /* =================================== */
