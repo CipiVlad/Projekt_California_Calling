@@ -19,7 +19,7 @@
 /* =================================== */
 /* ------💀--- h•e•a•d•e•r -💀 ---------*/
 /* =================================== */
-.vertical-line-left {
+.vertical-line {
     display: flex;
     justify-content: space-between;
 
@@ -36,7 +36,16 @@
         width: 50%;
         height: 160px;
     }
+
+    // ---funktioniert nicht---
+    // text-align: center;
+    // background-color: #000;
+
+    // img {
+    //     height: 250px;
+    //     color: white;
 }
+
 
 header {
 
@@ -87,7 +96,8 @@ header {
         font-family: $font-C;
         font-weight: 300;
         border: 1px solid white;
-        padding: 12px 30px;
+        padding: 20px 45px;
+        transition-duration: 1s;
     }
 
     a:hover {
@@ -144,6 +154,7 @@ header {
     img {
         width: 50%;
         margin-bottom: 10vh;
+        overflow: hidden;
     }
 }
 
@@ -285,8 +296,7 @@ header {
     display: flex;
     background-color: black;
     color: white;
-    padding-bottom: 20vh;
-
+    padding: 20vh 0;
 
     .head {
         width: 40%;
@@ -390,6 +400,7 @@ header {
         grid-row: 2;
         margin: 35% 56%;
         z-index: 1;
+        overflow: hidden;
     }
 
     // ---white-space-filter
@@ -403,10 +414,10 @@ header {
 // -----image-circle-animation--------
 
 .circle {
-    width: 22%;
+    width: 32%;
     position: relative;
-    left: 73%;
-    bottom: 208px;
+    left: 78%;
+    bottom: 287px;
     animation: circle 60s infinite;
 
     @keyframes circle {
@@ -429,7 +440,7 @@ header {
     grid-template-rows: 10% 70% 5% 15%;
     max-width: 1440px;
     list-style: none;
-    margin-bottom: 20vh;
+    margin-bottom: 30vh;
 
     img:first-child {
         display: block;
@@ -495,8 +506,9 @@ footer {
             font-family: $font-C;
             font-weight: 300;
             border: 1px solid white;
-            padding: 20px 40px;
+            padding: 20px 45px;
             margin-left: 7%;
+            transition-duration: 1s;
         }
 
         a:hover {
@@ -522,12 +534,13 @@ footer {
 
 .footer-text {
     font-size: 1.5rem;
+    margin-top: 20vh;
 
     p:first-child {
         font-size: 1.2rem;
         font-family: $font-C;
         margin-left: 7%;
-        margin-bottom: 10vh;
+        margin-bottom: 2vh;
     }
 
     p {
@@ -566,7 +579,9 @@ footer {
     color: #000;
     border: 5px solid #fff;
     background: #fff;
-    animation: backnforth 30s linear infinite;
+    animation: backnforth 10s linear infinite;
+    overflow: hidden;
+
 
     span {
         -webkit-text-fill-color: transparent;

@@ -11,9 +11,12 @@ html {
   font-size: 100%;
 }
 
+html,
 body {
-  max-width: 1440px;
+  max-width: 100%;
+  overflow-x: hidden;
   margin: 0 auto;
+  max-width: 1440px;
 }
 
 /* =================================== */
@@ -28,17 +31,17 @@ body {
 /* =================================== */
 /* ------💀--- h•e•a•d•e•r -💀 ---------*/
 /* =================================== */
-.vertical-line-left {
+.vertical-line {
   display: flex;
   justify-content: space-between;
 }
-.vertical-line-left p:nth-of-type(1) {
+.vertical-line p:nth-of-type(1) {
   background: black;
   width: 50%;
   height: 160px;
   border-right: 0.4px solid rgb(234, 226, 226);
 }
-.vertical-line-left p:nth-of-type(2) {
+.vertical-line p:nth-of-type(2) {
   background: black;
   width: 50%;
   height: 160px;
@@ -85,7 +88,8 @@ header a {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   border: 1px solid white;
-  padding: 12px 30px;
+  padding: 20px 45px;
+  transition-duration: 1s;
 }
 header a:hover {
   color: black;
@@ -133,6 +137,7 @@ header a {
 .facts img {
   width: 50%;
   margin-bottom: 10vh;
+  overflow: hidden;
 }
 
 /* =================================== */
@@ -243,7 +248,7 @@ header a {
   display: flex;
   background-color: black;
   color: white;
-  padding-bottom: 20vh;
+  padding: 20vh 0;
 }
 .bear-head-text .head {
   width: 40%;
@@ -326,6 +331,7 @@ header a {
   grid-row: 2;
   margin: 35% 56%;
   z-index: 1;
+  overflow: hidden;
 }
 .bear-images p {
   grid-column: 7 span;
@@ -334,10 +340,10 @@ header a {
 }
 
 .circle {
-  width: 22%;
+  width: 32%;
   position: relative;
-  left: 73%;
-  bottom: 208px;
+  left: 78%;
+  bottom: 287px;
   animation: circle 60s infinite;
 }
 @keyframes circle {
@@ -355,7 +361,7 @@ header a {
   grid-template-rows: 10% 70% 5% 15%;
   max-width: 1440px;
   list-style: none;
-  margin-bottom: 20vh;
+  margin-bottom: 30vh;
 }
 .poppy-images img:first-child {
   display: block;
@@ -413,8 +419,9 @@ footer nav a {
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
   border: 1px solid white;
-  padding: 20px 40px;
+  padding: 20px 45px;
   margin-left: 7%;
+  transition-duration: 1s;
 }
 footer nav a:hover {
   color: black;
@@ -430,12 +437,13 @@ footer section div:first-child {
 
 .footer-text {
   font-size: 1.5rem;
+  margin-top: 20vh;
 }
 .footer-text p:first-child {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   margin-left: 7%;
-  margin-bottom: 10vh;
+  margin-bottom: 2vh;
 }
 .footer-text p {
   font-family: "LarishA";
@@ -469,7 +477,8 @@ footer {
   color: #000;
   border: 5px solid #fff;
   background: #fff;
-  animation: backnforth 30s linear infinite;
+  animation: backnforth 10s linear infinite;
+  overflow: hidden;
 }
 .recommendation span {
   -webkit-text-fill-color: transparent;
