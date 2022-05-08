@@ -339,6 +339,7 @@ header {
     display: flex;
     background-color: white;
     color: black;
+    padding-bottom: 20vh;
 
     .head {
         width: 40%;
@@ -652,4 +653,4 @@ footer {
 /* =================================== */
 /* --🖥- m•e•d•i•a-q•u•e•r•i•e•s -📲--- */
 /* =================================== */
-@media screen and (min-width: 768px) {}
+@media screen only and (max-width: 1180px) {}
